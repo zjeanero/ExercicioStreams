@@ -14,6 +14,7 @@ public class Pessoa {
 
 
     public Pessoa(String id, String nome, String genero) {
+        this.id = id;
         this.nome = nome;
         this.genero = genero;
     }
@@ -22,29 +23,10 @@ public class Pessoa {
 
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getGenero() {
         return genero;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public List<Pessoa> populaPessoas() {
         Pessoa pessoa1 = new Pessoa("p1" , "Matheus Henrique", "Masculino");
